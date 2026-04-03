@@ -17,7 +17,7 @@ export const Map = styled.div`
   max-width: 100%;
   aspect-ratio: 1;
   position: relative;
-  background-image: url("/assets/map.png");
+  background-image: url("./assets/map.png");
   background-position: left top;
   background-size: 100%;
 

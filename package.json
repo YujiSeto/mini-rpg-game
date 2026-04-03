@@ -1,6 +1,7 @@
 {
   "name": "mini-rpg-game",
   "version": "0.1.0",
+  "homepage": "https://yujiseto.github.io/mini-rpg-game/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
