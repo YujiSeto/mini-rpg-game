@@ -10,6 +10,11 @@ export const Container = styled.div`
   align-items: center;
   padding: 20px;
   gap: 20px;
+
+  @media (max-width: 600px) {
+    padding: 10px;
+    gap: 15px;
+  }
 `;
 
 export const Map = styled.div`

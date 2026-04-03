@@ -7,7 +7,7 @@ export const Container = styled.div`
     "left . right"
     ". down .";
   gap: 10px;
-  margin-top: 30px;
+  margin-top: 20px;
   background-color: #333;
   padding: 15px;
   border-radius: 50%;
@@ -17,6 +17,12 @@ export const Container = styled.div`
   border: 4px solid #000;
   width: min-content;
   align-self: center;
+
+  @media (max-width: 600px) {
+    padding: 10px;
+    gap: 8px;
+    margin-top: 15px;
+  }
 `;
 
 export const Button = styled.div`
@@ -34,6 +40,11 @@ export const Button = styled.div`
   color: #fff;
   box-shadow: 0px 4px 0px #000;
 
+  @media (max-width: 600px) {
+    width: 48px;
+    height: 48px;
+  }
+
   &:active {
     box-shadow: 0px 0px 0px #000;
     transform: translateY(4px);
@@ -43,6 +54,11 @@ export const Button = styled.div`
   svg {
     width: 32px;
     height: 32px;
+
+    @media (max-width: 600px) {
+      width: 24px;
+      height: 24px;
+    }
   }
 `;
 
