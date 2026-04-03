@@ -1,18 +1,18 @@
 import styled from "styled-components";
 
 type Props = {
-  size: number;
-  left: number;
-  top: number;
+  x: number;
+  y: number;
   sidePos: number;
 };
 
 export const Container = styled.div<Props>`
-  width: ${(props) => props.size}px;
-  height: ${(props) => props.size}px;
+  width: calc(100% / 16);
+  height: calc(100% / 16);
   position: absolute;
-  left: ${(props) => props.left}px;
-  top: ${(props) => props.top}px;
+  left: calc(${(props) => props.x} * 100% / 16);
+  top: calc(${(props) => props.y} * 100% / 16);
   background-image: url("/assets/sprite.png");
-  background-position: 0px ${(props) => props.sidePos}px;
+  background-size: 100% 400%;
+  background-position: 0px calc(${(props) => props.sidePos} * 100% / 3);
 `;

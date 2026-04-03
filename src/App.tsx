@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import * as C from "./App.styles";
 import { Character } from "./components/Character";
 import { useCharacter } from "./components/hooks/useCharacter";
+import { Controller } from "./components/Controller";
 
 const App = () => {
   const char = useCharacter();
@@ -36,6 +37,12 @@ const App = () => {
       <C.Map>
         <Character x={char.x} y={char.y} side={char.side} />
       </C.Map>
+      <Controller
+        moveUp={char.moveUp}
+        moveDown={char.moveDown}
+        moveLeft={char.moveLeft}
+        moveRight={char.moveRight}
+      />
     </C.Container>
   );
 };

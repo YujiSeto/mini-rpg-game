@@ -8,20 +8,12 @@ type Props = {
 };
 
 export const Character = ({ x, y, side }: Props) => {
-  const size = 30;
   const sides = {
     down: 0,
-    up: 30,
-    right: 60,
-    left: 90,
+    left: 1,
+    right: 2,
+    up: 3,
   };
 
-  return (
-    <C.Container
-      size={size}
-      left={x * size}
-      top={y * size}
-      sidePos={sides[side] ?? 0}
-    ></C.Container>
-  );
+  return <C.Container x={x} y={y} sidePos={sides[side] ?? 0}></C.Container>;
 };
